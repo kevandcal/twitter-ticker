@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+#ticker {
+    position: relative;
+    overflow: hidden;
+    height: 3.5em;
+}
+
+#headlines {
+    white-space: nowrap;
+    position: absolute;
+    left: 100%;
+    font-size: 0px;
+    border-bottom: 3px black solid;
+}
+
+#headlines a {
+    padding-right: 35px;
+    font-size: 20px;
+    font-style: arial;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
