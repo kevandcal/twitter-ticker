@@ -2,9 +2,9 @@
 
 This small full-stack project pulls the latest headlines from the Twitter accounts of BBC World, Forbes, and Scientific American and displays them as a news ticker that runs from right to left. This was one of my first full-stack projects while a student at [SPICED Academy](https://spiced.academy/program/full-stack-web-development/).
 
-## Demo (click to try for yourself)
+## Demo
 
-[![Twitter Ticker](twitter-api-ticker.gif)](https://thenightshadefamily.github.io/twitter-ticker/)
+![Twitter Ticker](twitter-api-ticker.gif)
 
 ## Built with
 
