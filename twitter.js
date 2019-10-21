@@ -20,12 +20,12 @@ exports.getToken = callback => {
                 // ).toString("base64")}`
             }
         },
-        resp => {
-            if (resp.statusCode != 200) {
-                callback(resp.statusCode);
+        res => {
+            if (res.statusCode != 200) {
+                callback(res.statusCode);
             } else {
                 let body = "";
-                resp.on("data", chunk => {
+                res.on("data", chunk => {
                     body += chunk;
                 }).on("end", () => {
                     try {
@@ -35,7 +35,7 @@ exports.getToken = callback => {
                     }
                 });
             }
-            // console.log(resp.statusCode);
+            // console.log(res.statusCode);
         }
     );
     req.on("error", err => console.log(err));
@@ -60,12 +60,12 @@ exports.getTweets = (token, handle, callback) => {
                 Authorization: authorization
             }
         },
-        resp => {
-            if (resp.statusCode != 200) {
-                callback(resp.statusCode);
+        res => {
+            if (res.statusCode != 200) {
+                callback(res.statusCode);
             } else {
                 let body = "";
-                resp.on("data", chunk => {
+                res.on("data", chunk => {
                     body += chunk;
                 }).on("end", () => {
                     try {
